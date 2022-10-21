@@ -1,49 +1,45 @@
-body {background-color:#595856;
-      color:#893B25;
+body {background-color:#cedeea;
+      color:##03243c;
       font-family: Verdana, Arial, sans-serif;
 	  margin:0;
 	  font-size:110%;
 	 }
 
 header {
-	color:black;
-        background-image: url(Images/new11.jpg);
-       	
-
 		background-size:100% 100%;
-		
-        background-color:#40407a;
-	    margin-top:100px;
-		font-size:90%;
-	
+        background-color:#262626;
+	    margin-top:10px;
+		font-size:50%;
 		min-height:200px;}
 		
 header a {text-decoration:none;}
-header a:link {color:white;}
-header a:visited {color:white;}
-header a:hover {color:#edf5f5;}
+header a:link {color:#CD7033;}
+header a:visited {color:#CD7033;}
+header a:hover {color:#cedeea;}
 
+h2 {
+	color:#063f69;
+}
 
 nav {position:fixed;
      top:0;
 	 left:0;
 	 text-align:center;
-	 background-color:white;
 	 margin:0;
 	 padding-right:0;
-	 z-index:9999;
      width:100%;
      padding-top:0.5em;
 	 padding-bottom:1em;
-	 background-color:black;
+	 background-color:#262626;
+	 border-bottom:2px solid #CD7033;
 }
 
 nav a {text-decoration:none;
        display:block;}
 
-nav a:link {color:#CD7033;}
-nav a:visited {color:#CD7033;}
-nav a:hover {color:#AFAFAF;}
+nav a:link {color:#41b5e6;}
+nav a:visited {color:#41b5e6;}
+nav a:hover {color:#CD7033;}
 			
 			 
 
@@ -52,7 +48,7 @@ nav ul {list-style-type:none;
 display:flex;
 flex-wrap:wrap;
 margin:0;
-font-size:1.2em;}
+font-size:1em;}
 
 
 nav li {width:40%;
@@ -71,21 +67,18 @@ footer {
 		font-style:italic;
         text-align:center;
 		margin-top:30px;
+	    border-top:5px solid #595856;
+}
 
-	    border-top:5px solid #595856;}
-
-#wrapper {background-color:#FEF5DA;
+#wrapper {background-color:#cedeea;
           padding:2em;
 		  }
 
-h3 {color:#44261B;
-    text-decoration:underline; }
-
-h4 {color:#613D30;}
-
+//*
 *{box-sizing: border-box;}
+*//
 
-.home {height:20vh;
+.home {height:2vh;
        padding-top:2em;
 padding-left:10%;}
 
@@ -93,17 +86,7 @@ padding-left:10%;}
        padding-top:2em;
 padding-left:10%;}
 
-#mathero {background-image:url(images/yogamat.jpg);
-         background-repeat:no-repeat;
-		 height:300px;
-		 background-size:cover;
-display:none;}
 
-#loungehero {background-image:url(images/yogalounge.jpg);
-             background-repeat:no-repeat;
-			 height:300px;
-			 background-size:cover;
-display:none;}
 
 section {padding-left:0.5em;
 padding-right:0.5em;}
@@ -112,20 +95,7 @@ padding-right:0.5em;}
 
 #desktop {display:none;}
 
-table {width:60%;
-       margin:auto;
-	   border: 3px solid black;
-	   border-collapse:collapse;
-	   margin-bottom:1em;
-	   background-color:#E8D9A2;
-	   
-}
 
-td,th {padding:5px;
-       border: 3px solid black;
-}
-
-tr:nth-of-type(even) {background-color:#E3DCC1;}
 
 caption {margin:1em;
          font-weight:bold;
@@ -139,13 +109,16 @@ font-size:120%;}
 
 }
 
-#aboutpic2 {
-		   margin-right:40px;
+#logopic {
+	margin-top:5px;
+	margin-right:50px;
 		   padding:5px;
-         display:none;
-		
-
+		   display:float;
+	
 }
+
+
+
 .clearfloat { clear:right;}
 		   
 form {display:flex; 
@@ -155,26 +128,12 @@ flex-direction:column;
 
 input, textarea {margin-bottom:0.5em;}
 	  
-audio {display:block;
-margin:1em;}
-
-video {display:block;
-margin:1em;
-	height:auto;
-	max-height:400px;
-width:90%;
-border-style:none;
 
 
+.mainheading {
+	text-align:left;
+	color:#41b5e6;
 }
-
-
-#storehero {background-image:url(images/store.jpg);
-             background-repeat:no-repeat;
-			 height:300px;
-			 background-size:cover;
-display:none;
-}   
 
 
 
@@ -189,59 +148,29 @@ nav ul {display:flex;
 		
 nav li {width:7em;}
 
+
+
 section {padding-left:2em;
 padding-right:2em;}
 
-#mathero {display:block;
-padding-bottom:1em;
-background-color:white;}
-
-#loungehero {display:block;
-padding-bottom:1em;}
 
 #aboutpic {display:block;
 padding-bottom:1em;
 margin:10px;}
 
-#aboutpic2 {display:block;
-padding-bottom:1em;
-float:right;
-margin:10px;}
-
-#flow {display:flex;
-flex-direction:row;}
 
 #mobile {display:none;}
 
 #desktop {display:inline;}
 
-#indeximage {display:block;}
 
-
-
-form {width:60%;
-      display:grid;
-	  grid-gap:1em;
-	  grid-template-columns:12em 1fr;
-}
-
-#mySubmit {grid-column:2/3;
-           width:9em;}
-
-label {align:right;}
-
-#storehero {display:block;
-padding-bottom:1em;}
-
-
-}
 
 @media (min-width:1024px) {
 header {font-size:120%;}
 
-.home {height:50vh;
-        padding-top:5em;
-		padding-left:8em;
+.home {
+        padding-top:2em;
+		padding-left:2em;
 }
 
 .content {height:30vh;
@@ -251,7 +180,7 @@ header {font-size:120%;}
 
 #wrapper {margin-left:auto;
           margin-right:auto;
-width:80%;}
+width:100%;}
 
 #aboutpic {
 float:right;
